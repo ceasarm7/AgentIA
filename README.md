@@ -22,19 +22,13 @@ La página es estática y puede publicarse en GitHub Pages, Vercel, Netlify o cu
 
 ### GitHub Pages
 
-```bash
-git init
-git add .
-git commit -m "Initial AgentIA Group landing page"
-git branch -M main
-git remote add origin https://github.com/TU-USUARIO/agentia-group.git
-git push -u origin main
-```
+Este proyecto está configurado para publicarse desde:
 
-Después, en GitHub:
-Settings → Pages → Deploy from branch → `main` → `/root`.
+`ceasarm7/AgentIA`
 
-Para conectar `agentia-group.com`, configura en GitHub Pages el dominio personalizado y agrega los registros DNS que GitHub te indique en tu proveedor de dominio.
+En GitHub:
+
+**Settings → Pages → Deploy from branch → `main` → `/ (root)`**
 
 ## Datos actuales
 
