@@ -47,3 +47,4 @@ En GitHub:
   - Usuarios 6 a 10: **USD 99/mes c/u**
 - Incluido por usuario y mes: 1 hora de soporte + actualizaciones de Agentia + parches de seguridad.
 - Desarrollo específico y soporte adicional: suplemento bajo demanda (se cotiza).
+- Argumento ROI: el servidor es retorno de inversión — Agentia-max (nuestro propio modelo) procesó 120 millones de tokens en 2 días.
