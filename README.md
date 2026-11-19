@@ -36,3 +36,14 @@ En GitHub:
 - Email: contacto@agentia-group.com
 - Teléfono: +52 33 1848 0673
 - Ubicación: Guadalajara, México
+
+## Oferta: Agentia en Servidor NVIDIA Privado (sección `#servidor`)
+
+- Instalación y entrenamiento de Agentia sobre el servidor NVIDIA privado del cliente: **USD 999** (pago único).
+- Mensual por usuario (el precio baja al sumar usuarios):
+  - 1er usuario: **USD 419/mes**
+  - 2do usuario: **USD 299/mes**
+  - Usuarios 3 a 5: **USD 199/mes c/u**
+  - Usuarios 6 a 10: **USD 99/mes c/u**
+- Incluido por usuario y mes: 1 hora de soporte + actualizaciones de Agentia + parches de seguridad.
+- Desarrollo específico y soporte adicional: suplemento bajo demanda (se cotiza).
