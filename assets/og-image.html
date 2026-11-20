@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1200px;height:630px;overflow:hidden;font-family:Inter,'Segoe UI',Arial,sans-serif;background:#050b20;color:#fff;position:relative}
+.glow1{position:absolute;width:900px;height:900px;border-radius:50%;right:-300px;top:-420px;background:radial-gradient(circle,rgba(40,100,255,.30),transparent 60%)}
+.glow2{position:absolute;width:700px;height:700px;border-radius:50%;left:-260px;bottom:-320px;background:radial-gradient(circle,rgba(162,44,255,.22),transparent 60%)}
+.brand{position:absolute;top:54px;left:80px;display:flex;align-items:flex-start;gap:14px}
+.brand img{width:54px;height:54px}
+.brand-name{font-size:26px;font-weight:800;letter-spacing:-1px;line-height:1}
+.brand-name i{font-style:normal;background:linear-gradient(90deg,#2864ff,#8a32f3);-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand small{display:block;font-size:9px;letter-spacing:6px;color:#8d99b0;margin-top:5px;margin-left:4px}
+.main{position:absolute;top:196px;left:80px;right:360px}
+.kicker{font-size:14px;letter-spacing:4px;font-weight:700;color:#6ea0ff;margin-bottom:18px}
+h1{font-size:62px;line-height:1.06;letter-spacing:-2px;font-weight:800}
+h1 em{font-style:normal;background:linear-gradient(90deg,#32a6ff,#ad3aff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{margin-top:24px;font-size:20px;color:#bac5db;max-width:620px;line-height:1.5}
+.mark-wm{position:absolute;right:80px;top:158px;width:300px;height:300px;opacity:.15}
+.chips{position:absolute;left:80px;bottom:58px;display:flex;gap:14px}
+.chip{border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:11px 22px;font-size:15px;font-weight:600;color:#dfe6f5;background:rgba(255,255,255,.04);white-space:nowrap}
+.chip b{font-weight:800;background:linear-gradient(90deg,#32a6ff,#ad3aff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.url{position:absolute;right:80px;bottom:66px;font-size:16px;font-weight:600;color:#8d99b0;letter-spacing:1px}
+</style>
+</head>
+<body>
+<div class="glow1"></div>
+<div class="glow2"></div>
+<div class="brand">
+  <img src="logo-mark.svg" alt="">
+  <span class="brand-name">Agent<i>IA</i><small>GROUP</small></span>
+</div>
+<img class="mark-wm" src="logo-mark.svg" alt="">
+<div class="main">
+  <div class="kicker">LA NUEVA OFERTA</div>
+  <h1>Agentia en tu propio <em>servidor&nbsp;NVIDIA</em></h1>
+  <p class="sub">Instalación y entrenamiento por USD 999. Plan mensual por usuario con soporte, actualizaciones y parches de seguridad incluidos.</p>
+</div>
+<div class="chips">
+  <div class="chip"><b>120M+</b>&nbsp;tokens/día</div>
+  <div class="chip"><b>3000M+</b>&nbsp;tokens/mes</div>
+  <div class="chip"><b>USD 999</b>&nbsp;instalación</div>
+</div>
+<div class="url">agentia-group.com</div>
+</body>
+</html>
