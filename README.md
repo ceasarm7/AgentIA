@@ -1,16 +1,16 @@
-# AgentIA Group — Landing Page
+# AGENTia — Landing Page
 
-Landing page estática de AgentIA Group.
+Landing page estática de AGENTia (agentia-group.com).
 
 ## Archivos
 
 - `index.html` — estructura y contenido.
 - `styles.css` — diseño, responsive y animaciones.
-- `favicon.svg` — favicon vectorial (marca sobre tile navy).
-- `assets/` — gráfico de marca:
-  - `logo-mark.svg` — solo la marca (fondo transparente).
-  - `logo-full.svg` / `logo-full-white.svg` — lockup horizontal (fondo claro / oscuro).
-  - `favicon-16.png`, `favicon-32.png`, `favicon-48.png`, `apple-touch-icon.png` (180×180).
+- `assets/` — identidad gráfica (logo oficial de agentia-services.com):
+  - `logo.png` — lockup completo (emblema + wordmark), fondo transparente; se usa en el header.
+  - `logo-emblem.png` — solo el emblema (círculo con los tres arcos y núcleo).
+  - `logo-wordmark.png` — solo el texto "AGENTia / INTELLIGENT SERVICES".
+  - `favicon-16.png`, `favicon-32.png`, `favicon-48.png`, `apple-touch-icon.png` (180×180) — emblema.
   - `og-image.png` (1200×630) — imagen para redes; su plantilla editable es `og-image.html`.
 
 ## Ejecutar localmente
@@ -57,18 +57,20 @@ En GitHub:
 
 ## Carta gráfica
 
-Identidad visual de AgentIA Group para la web.
+Identidad visual de AGENTia para la web (logo oficial tomado de agentia-services.com).
 
-- **Marca**: un "A" formado por dos trazos con ápice redondeado y un nodo circular en la pierna izquierda (motivo de "nodo/agente").
-- **Gradiente de marca**: diagonal de abajo-izquierda a arriba-derecha, `#2864ff → #5331e8 → #a22cff`.
+- **Emblema**: círculo navy `#171E26` con tres arcos orbitales de gradiente — coral `#FD605B`, violeta `#CB6DE5` e índigo `#6F6EE6` — girando alrededor de un núcleo blanco luminoso (motivo de "agente en órbita / inteligencia central").
+- **Wordmark**: "AGENT**ia**" en negrita — la "i" en coral `#FD605B` y la "a" en azul claro `#7FB2FF` — con "INTELLIGENT SERVICES" en capitales espaciadas debajo.
+  - Fondo claro: "AGENT" en ink `#0d1025`, subtítulo `#667085`.
+  - Fondo oscuro: "AGENT" en blanco, subtítulo `#8d99b0`.
 - **Colores base** (tokens en `styles.css`):
   - Navy `#050b20` · Blue `#2864ff` · Violet `#7138ee` · Purple `#a22cff` · Cyan `#28c8ff`
   - Soft `#f7f8fc` · Ink `#0b1633` · Muted `#667085` · Line `#e8ebf3`
 - **Tipografía**: Inter (Google Fonts), pesos 400–800.
 - **Uso del logo**:
-  - Fondo claro → `assets/logo-full.svg` (texto ink `#0b1633`).
-  - Fondo oscuro → `assets/logo-full-white.svg` (texto blanco).
-  - Solo la marca → `assets/logo-mark.svg`.
-  - El gradiente de la marca no se altera; el texto "IA" usa el gradiente `#2864ff → #8a32f3`.
-- **Favicon**: `favicon.svg` (tile navy `#050b20`, radio 14/64) + PNG 16/32/48 y apple-touch 180.
-- **OG image**: `assets/og-image.png` 1200×630, navy con glows blue/violet, marca de agua de la marca a la derecha y chips de estadísticas.
+  - Header (fondo claro) → `assets/logo.png` (lockup completo, altura 46px).
+  - Footer (fondo oscuro) → `assets/logo-emblem.png` + texto "AGENTia" con acentos coral/azul.
+  - No redibujar ni recolorear el emblema; se usa tal cual (PNG transparente).
+- **Favicon**: emblema en PNG 16/32/48 y apple-touch 180.
+- **OG image**: `assets/og-image.png` 1200×630, navy con glows blue/violet/coral, emblema como marca de agua a la derecha y chips de estadísticas.
+- **Fuente del logo**: `https://agentia-services.com/logo.png` (674×370) y `favicon.png` (158×148). Si la carpeta de Drive con los archivos fuente (vectores) se hace pública, se regenera el set en alta resolución.
