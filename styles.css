@@ -20,8 +20,9 @@ a{color:inherit;text-decoration:none}
 .site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(232,235,243,.8)}
 .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}
 .brand{display:flex;align-items:center;gap:9px;font-weight:800}
+.brand-logo{height:46px;width:auto;display:block}
 .brand-mark{width:44px;height:44px;display:inline-flex}
-.brand-mark svg{width:100%;height:100%}
+.brand-mark svg,.brand-mark img{width:100%;height:100%;display:block}
 .brand-text{font-size:25px;letter-spacing:-1.4px;line-height:.8}
 .brand-text span{background:linear-gradient(90deg,#2864ff,#8a32f3);-webkit-background-clip:text;background-clip:text;color:transparent}
 .brand-text small{display:block;font-size:7px;letter-spacing:6px;margin:8px 0 0 19px;color:#536078}
@@ -97,6 +98,61 @@ h2 span{background:linear-gradient(90deg,#2864ff,#9131ef);-webkit-background-cli
 .service-card p{font-size:12px;color:var(--muted);margin:0}
 .featured p{color:#adb8d2}
 .service-card a{display:inline-block;margin-top:22px;font-size:12px;font-weight:800;color:#8e6bff}
+.service-card.wide{grid-column:span 6;display:grid;grid-template-columns:auto 1fr auto;gap:26px;align-items:center;min-height:0}
+.service-card.wide .service-icon{margin-bottom:0;font-size:34px}
+.service-card.wide .wide-copy p{max-width:660px;margin-top:10px}
+.service-card.wide .wide-link{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;color:#c9b4ff;white-space:nowrap}
+.service-card.wide .wide-link:hover{color:#fff}
+.service-badge{position:absolute;top:-11px;left:26px;background:linear-gradient(90deg,#2864ff,#a22cff);color:#fff;font-size:10px;font-weight:800;letter-spacing:1.5px;padding:5px 12px;border-radius:999px;box-shadow:0 8px 18px rgba(91,54,230,.35)}
+
+.server-section{background:var(--navy);color:#fff;padding:100px 0;position:relative;overflow:hidden}
+.server-section:before{content:"";position:absolute;width:640px;height:640px;border-radius:50%;left:-260px;bottom:-320px;background:radial-gradient(circle,rgba(40,100,255,.35),transparent 65%)}
+.offer-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:stretch}
+.offer-panel{background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:44px;backdrop-filter:blur(8px)}
+.offer-panel h2{font-size:44px;margin-bottom:10px}
+.offer-panel .value-tagline{margin-bottom:22px}
+.offer-panel>p{color:#bac5db;font-size:14px;max-width:520px}
+.offer-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:30px 0 34px}
+.offer-item{display:grid;grid-template-columns:30px 1fr;gap:12px;border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:16px;background:rgba(255,255,255,.03)}
+.offer-check{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#2864ff,#7d35ef);font-size:13px;font-weight:800;color:#fff}
+.offer-item strong{display:block;font-size:12.5px;margin-bottom:3px;color:#fff}
+.offer-item p{font-size:11px;color:#9fb0d0;margin:0}
+.price-panel{background:#fff;color:var(--ink);border-radius:24px;padding:40px 36px;box-shadow:0 25px 70px rgba(0,0,0,.35);display:flex;flex-direction:column}
+.price-setup{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:18px}
+.price-setup-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;gap:12px}
+.price-setup-top span{font-size:13px;font-weight:700}
+.price-setup-top strong{font-size:26px;letter-spacing:-1px;background:linear-gradient(90deg,#2864ff,#9131ef);-webkit-background-clip:text;background-clip:text;color:transparent}
+.price-setup p{font-size:11.5px;color:var(--muted);margin:0}
+.price-table{width:100%;border-collapse:collapse;margin-bottom:18px}
+.price-table th{text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);padding:0 0 8px;border-bottom:1px solid var(--line)}
+.price-table td{padding:11px 0;font-size:13px;border-bottom:1px solid var(--line)}
+.price-table td:last-child{text-align:right;font-weight:800;color:var(--ink)}
+.price-includes{border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:14px}
+.price-includes strong{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#6639e9;display:block;margin-bottom:8px}
+.price-includes ul{margin:0;padding-left:18px}
+.price-includes li{font-size:12px;color:#536078;margin-bottom:4px}
+.price-note{font-size:11px;color:var(--muted);margin:0 0 18px}
+.price-examples{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:auto}
+.price-examples>div{border:1px dashed #c9d2e8;border-radius:12px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.price-examples span{font-size:11px;color:var(--muted)}
+.price-examples strong{font-size:15px}
+.faq-grid{margin-top:24px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.faq-item{border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:20px;background:rgba(255,255,255,.03)}
+.faq-item strong{display:block;font-size:12.5px;margin-bottom:7px;color:#cfe0ff}
+.faq-item p{font-size:11.5px;color:#9fb0d0;margin:0}
+.faq-item.faq-wide{grid-column:1/-1;display:grid;grid-template-columns:280px 1fr;gap:22px;align-items:center}
+.faq-item.faq-wide p{font-size:12px;color:#bac5db}
+.faq-item.faq-wide b{color:#fff}
+.roi-block{margin:0 0 30px;border:1px solid rgba(120,140,255,.35);border-radius:16px;padding:20px 22px;background:linear-gradient(135deg,rgba(40,100,255,.16),rgba(162,44,255,.10))}
+.roi-stat{display:flex;align-items:baseline;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+.roi-stat strong{font-size:34px;letter-spacing:-1.5px;background:linear-gradient(90deg,#32a6ff,#ad3aff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.roi-stat span{font-size:11px;color:#b9c3dc}
+.roi-stat-2{margin-top:2px}
+.roi-stat-2 strong{font-size:24px}
+.roi-block p{font-size:12px;color:#bac5db;margin:0}
+.roi-block b{color:#fff}
+.btn-ghost{border:1px solid rgba(255,255,255,.35);color:#fff;background:transparent}
+.btn-ghost:hover{background:rgba(255,255,255,.08);transform:translateY(-2px)}
 
 .value-section{padding:100px 0;background:#fff}
 .value-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
@@ -138,9 +194,11 @@ h2 span{background:linear-gradient(90deg,#2864ff,#9131ef);-webkit-background-cli
 
 .footer{background:#030817;color:#aab5ca;padding:28px 0}
 .footer-inner{display:grid;grid-template-columns:1fr auto auto;gap:30px;align-items:center}
-.footer-brand .brand-text{color:#fff;font-size:19px}
-.footer-brand .brand-text small{color:#8d99b0}
-.small-mark{width:34px;height:34px}
+.footer-brand .brand-text{color:#fff;font-size:19px;letter-spacing:-.5px}
+.footer-brand .brand-text span{background:none;-webkit-text-fill-color:currentColor;color:inherit}
+.footer-brand .brand-text .i{color:#FD605B}
+.footer-brand .brand-text .a{color:#7FB2FF}
+.footer-brand .brand-text small{color:#8d99b0;margin-left:2px}
 .footer-contact{display:flex;gap:22px;font-size:11px}
 .footer-contact a:hover{color:#fff}
 .footer p{font-size:10px;margin:0;text-align:right}
@@ -166,6 +224,10 @@ h2 span{background:linear-gradient(90deg,#2864ff,#9131ef);-webkit-background-cli
   .commit-grid{grid-template-columns:repeat(2,1fr)}
   .footer-inner{grid-template-columns:1fr;gap:15px}
   .footer p{text-align:left}
+  .service-card.wide{grid-column:span 2;grid-template-columns:1fr;gap:14px}
+  .service-card.wide .wide-copy p{max-width:none}
+  .offer-grid{grid-template-columns:1fr}
+  .faq-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:600px){
   .container{width:min(100% - 28px,1160px)}
@@ -187,4 +249,13 @@ h2 span{background:linear-gradient(90deg,#2864ff,#9131ef);-webkit-background-cli
   .cta-section h2{font-size:36px}
   .footer-contact{flex-direction:column;gap:7px}
   .visual-label{display:none}
+  .service-card.wide{grid-column:auto}
+  .server-section{padding:70px 0}
+  .offer-panel{padding:30px 24px}
+  .offer-panel h2{font-size:36px}
+  .offer-list{grid-template-columns:1fr;margin:24px 0 28px}
+  .price-panel{padding:28px 22px}
+  .price-examples{grid-template-columns:1fr}
+  .faq-grid{grid-template-columns:1fr}
+  .faq-item.faq-wide{grid-template-columns:1fr;gap:8px}
 }
